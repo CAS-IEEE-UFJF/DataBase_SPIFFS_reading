@@ -1,8 +1,9 @@
-### Faz leitura do arquivo db.txt nome e UID
+### Faz leitura do arquivo db.txt o nome e UID
 
 #### db.txt é composto por:
-* Cada linha se refere a uma pessoa
+* Cada linha se refere a uma pessoa.
 * As informações da mesma pessoa estão separadas por ','
+* nome,UIDS
 
 ```
 20
@@ -33,10 +34,10 @@ Fulano24,AC B2 C2 07
 ```
 
 #### Problemas...
-* ~~O tamanho do db já tem que ser conhecido.~~
+* ~~O tamanho do db já tem que ser conhecido.~~<br>
   Agora, na primeira linha do db se refere ao tamanho do db (qualquer coisa depois da 20º será **ignorado**).
 
-* ~~DB tem que ser criado em uma única linha e com arquivos separados por ','.~~
+* ~~DB tem que ser criado em uma única linha e com arquivos separados por ','.~~<br>
   Agora, pode ter quebra de linha;
 
 * Neste caso, db já esta na memória flash do esp!!!!

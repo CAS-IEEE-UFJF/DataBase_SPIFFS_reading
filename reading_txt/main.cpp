@@ -5,7 +5,7 @@ String name [30] = "";
 String uid [30] = "";
 String lei = "";
 int cont = 0;
-int cont_max = 24;
+int cont_max;
 
 void setup()
 {
@@ -20,6 +20,9 @@ void setup()
   }
   else
   {
+    lei = db.readStringUntil('\n');
+    cont_max = lei.toInt(); //tamanho do db
+
     Serial.println("file open :)");
 
     while (cont < cont_max)
@@ -27,7 +30,7 @@ void setup()
       lei = db.readStringUntil(',');
       name[cont] = lei;
 
-      lei = db.readStringUntil(',');
+      lei = db.readStringUntil('\n'); //quebra de linha \n ou \r
       uid[cont] = lei;
 
       cont++;
@@ -41,13 +44,14 @@ void setup()
 void loop()
 {
   for(int i = 0; i < cont_max; i++)
-  {
+  {//imprime db
     Serial.print(name[i]);
     Serial.print(" _ ");
     Serial.print(uid[i]);
 
     Serial.println("");
+    delay(200);
   }
 
-  delay(1000);
+  delay(10000);//espera 10s
 }

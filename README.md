@@ -1,5 +1,11 @@
 ## Este repositório é para mostrar as formas de fazer leitura de um banco de dados (Database)
 
-#### - [x] file .txt
-#### - [] file .json
-#### - [] file .xml
+Melhores opções:
+* #### - [] file .csv
+* #### - [] file .json
+* #### - [] file .xml
+
+<hr>
+
+Pior opção:
+* #### - [x] file .txt

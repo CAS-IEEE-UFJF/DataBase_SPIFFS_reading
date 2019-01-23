@@ -1,4 +1,4 @@
-//pasta do platformIO
+#pasta do platformIO
 SPIFFS_read_complet/
 
-up_db/
+.gitignore
